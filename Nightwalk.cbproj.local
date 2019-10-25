@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019.10.22 15:09:54.242.cbproj,C:\Users\teremok\Documents\RAD Studio\Projects\Project1.cbproj=C:\Users\teremok\Documents\RAD Studio\Projects\Nightwalk.cbproj</Transaction>
+    <Transaction>2019.10.22 15:10:02.701.cpp,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.cpp=C:\Users\teremok\Documents\RAD Studio\Projects\Main.cpp</Transaction>
+    <Transaction>2019.10.22 15:10:02.701.h,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.h=C:\Users\teremok\Documents\RAD Studio\Projects\Main.h</Transaction>
+    <Transaction>2019.10.22 15:10:02.701.dfm,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\teremok\Documents\RAD Studio\Projects\Main.dfm</Transaction>
+    <Transaction>2019.10.22 15:13:34.348.cpp,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.cpp=C:\Users\teremok\Documents\RAD Studio\Projects\TPoint.cpp</Transaction>
+    <Transaction>2019.10.22 15:13:34.348.h,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.h=C:\Users\teremok\Documents\RAD Studio\Projects\TPoint.h</Transaction>
+    <Transaction>2019.10.22 15:18:49.668.cpp,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.cpp=C:\Users\teremok\Documents\RAD Studio\Projects\TPointContainer.cpp</Transaction>
+    <Transaction>2019.10.22 15:18:49.668.h,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.h=C:\Users\teremok\Documents\RAD Studio\Projects\TPointContainer.h</Transaction>
+    <Transaction>2019.10.22 15:25:40.025.cpp,C:\Users\teremok\Documents\RAD Studio\Projects\TPoint.cpp=C:\Users\teremok\Documents\RAD Studio\Projects\TCrossroad.cpp</Transaction>
+    <Transaction>2019.10.22 15:25:40.025.h,C:\Users\teremok\Documents\RAD Studio\Projects\TPoint.h=C:\Users\teremok\Documents\RAD Studio\Projects\TCrossroad.h</Transaction>
+    <Transaction>2019.10.22 19:09:13.856.cpp,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.cpp=C:\Users\teremok\Documents\RAD Studio\Projects\TRoad.cpp</Transaction>
+    <Transaction>2019.10.22 19:09:13.871.h,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.h=C:\Users\teremok\Documents\RAD Studio\Projects\TRoad.h</Transaction>
+    <Transaction>2019.10.22 22:28:29.654.cbproj,C:\Users\teremok\Documents\RAD Studio\Projects\Nightwalk.cbproj=C:\Users\teremok\Documents\RAD Studio\Projects\Nightwalk.cbproj</Transaction>
+    <Transaction>2019.10.25 13:03:03.481.cpp,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.cpp=C:\Users\teremok\Documents\RAD Studio\Projects\TEnity.cpp</Transaction>
+    <Transaction>2019.10.25 13:03:03.483.h,C:\Users\teremok\Documents\RAD Studio\Projects\Unit1.h=C:\Users\teremok\Documents\RAD Studio\Projects\TEnity.h</Transaction>
+    <Transaction>2019.10.25 13:26:02.974.cpp,C:\Users\teremok\Documents\RAD Studio\Projects\TPointContainer.cpp=C:\Users\teremok\Documents\RAD Studio\Projects\TRoadmap.cpp</Transaction>
+    <Transaction>2019.10.25 13:26:02.974.h,C:\Users\teremok\Documents\RAD Studio\Projects\TPointContainer.h=C:\Users\teremok\Documents\RAD Studio\Projects\TRoadmap.h</Transaction>
+  </Transactions>
+</BorlandProject>
