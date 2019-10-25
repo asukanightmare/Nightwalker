@@ -102,7 +102,10 @@ void __fastcall TForm1::Image1MouseDown(TObject *Sender, TMouseButton Button, TS
 void __fastcall TForm1::Button2Click(TObject *Sender)
 {
 	 TEnitymap* enitymap = new TEnitymap(Image1->Canvas);
-	 enitymap->createEnity(city->listRoad[1],25.0, true);
+	 enitymap->createEnity(city->listRoad[5],25.0, true);
+	 enitymap->drawEnities();
+
+	 enitymap->listEnity[0]->move(-250);
 	 enitymap->drawEnities();
 
 	 delete enitymap;

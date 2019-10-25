@@ -21,7 +21,7 @@ TRoadmap::TRoadmap(TMemo* logDest) {
 	this->log = logDest;
 }
 TRoadmap::~TRoadmap() {
-	for(int i = 0; i < this->listRoad.size(); i++) delete this->listRoad[i]
+	for(int i = 0; i < this->listRoad.size(); i++) delete this->listRoad[i];
 	for(int i = 0; i < this->listCrossroad.size(); i++) delete this->listCrossroad[i];
 }
 void TRoadmap::drawRoads(TCanvas* dest) {
@@ -78,17 +78,17 @@ bool TRoadmap::existRoad(int ID_A, int ID_B) {
 }
 void TRoadmap::drawCrossroads(TCanvas* dest) {
 	for(int i = 0; listCrossroad.size() > i; i++) {
-		dest->TextOutA(listCrossroad[i].x+10,listCrossroad[i].y+10, UnicodeString(listCrossroad[i].ID));
+		dest->TextOutA(listCrossroad[i]->x+10,listCrossroad[i]->y+10, UnicodeString(listCrossroad[i]->ID));
 		//dest->Pen->Color = clWhite;
-		dest->Ellipse(listCrossroad[i].x-10,listCrossroad[i].y-10, listCrossroad[i].x+11,listCrossroad[i].y+11);
+		dest->Ellipse(listCrossroad[i]->x-10,listCrossroad[i]->y-10, listCrossroad[i]->x+11,listCrossroad[i]->y+11);
 		dest->Pen->Color = clBlack;
 	}
 }
 void TRoadmap::traceRoads() {
 	for(int i = 0; listCrossroad.size() > i; i++) {
-		for(int k = 0; listCrossroad[i].connetions.size() > k; k++) {
-			if(!existRoad(listCrossroad[i].ID, listCrossroad[i].connetions[k]->ID))
-				addConnection(listCrossroad[i].ID, listCrossroad[i].connetions[k]->ID);
+		for(int k = 0; listCrossroad[i]->connetions.size() > k; k++) {
+			if(!existRoad(listCrossroad[i]->ID, listCrossroad[i]->connetions[k]->ID))
+				addConnection(listCrossroad[i]->ID, listCrossroad[i]->connetions[k]->ID);
 		}
 	}
 }
@@ -97,16 +97,16 @@ void TRoadmap::fillRand() {
 		int _x = (1+rand()%5)*60, _y = (1+rand()%5)*60;
 		addCrossroad(_x,_y);
 	}
-	listCrossroad[0].connetions.push_back(listCrossroad[1]);
-	listCrossroad[1].connetions.push_back(listCrossroad[2]);
-	listCrossroad[2].connetions.push_back(listCrossroad[3]);
-	listCrossroad[3].connetions.push_back(listCrossroad[4]);
-	listCrossroad[4].connetions.push_back(listCrossroad[1]);
-	listCrossroad[4].connetions.push_back(listCrossroad[5]);
-	listCrossroad[5].connetions.push_back(listCrossroad[0]);
-	listCrossroad[5].connetions.push_back(listCrossroad[6]);
-	listCrossroad[6].connetions.push_back(listCrossroad[7]);
-	listCrossroad[7].connetions.push_back(listCrossroad[3]);
+	listCrossroad[0]->connetions.push_back(listCrossroad[1]);
+	listCrossroad[1]->connetions.push_back(listCrossroad[2]);
+	listCrossroad[2]->connetions.push_back(listCrossroad[3]);
+	listCrossroad[3]->connetions.push_back(listCrossroad[4]);
+	listCrossroad[4]->connetions.push_back(listCrossroad[1]);
+	listCrossroad[4]->connetions.push_back(listCrossroad[5]);
+	listCrossroad[5]->connetions.push_back(listCrossroad[0]);
+	listCrossroad[5]->connetions.push_back(listCrossroad[6]);
+	listCrossroad[6]->connetions.push_back(listCrossroad[7]);
+	listCrossroad[7]->connetions.push_back(listCrossroad[3]);
 }
 
 

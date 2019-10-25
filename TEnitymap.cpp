@@ -4,7 +4,8 @@
 #pragma hdrstop
 
 #include "TEnitymap.h"
-#define SPEED_LIMIT 10
+#define SPEED_LIMIT 5.0
+#define RANGE_STOP 50.0
 
 //---------------------------------------------------------------------------
 void TEnitymap::drawEnity(TEnity* enity) {
@@ -34,10 +35,10 @@ void TEnitymap::calcEnity(TEnity* enity) {
 	for(int i = 0; i < this->listEnity.size(); i++) {
 		double range = fabs(listEnity[i]->position - enity->position);
 		if(*(listEnity[i]->road) == *(enity->road)
-		&& listEnity[i]->direction == enity->direction
-		&& ) {
-
-        }
-    }
+		&& listEnity[i]->direction == enity->direction) {
+			//double koeff = (range - 10.0)/(STOP_RANGE) - 1;
+			enity->acceleration += range
+		}
+	}
 }
 #pragma package(smart_init)

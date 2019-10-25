@@ -39,4 +39,8 @@ void TRoad::set_angle() {
 	else if(dx == 0.0) angle = PI/2.0;
 	else if(dy == 0.0) angle = 0;
 }
+bool TRoad::operator==(TRoad* left, TRoad* right) {
+	if((left->ID_A == right->ID_B && left->ID_B == right->ID_A) || (left->ID_A == right->ID_A && left->ID_B == right->ID_B)) return true;
+	else return false;
+}
 #pragma package(smart_init)

@@ -15,6 +15,7 @@ public:
 	TRoad(int a, int b);
 	TRoad();
 	double angle;
+	bool operator==(TRoad* left, TRoad* right);
 private:
 	void set_angle();
 };

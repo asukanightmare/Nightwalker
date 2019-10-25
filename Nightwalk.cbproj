@@ -89,6 +89,10 @@
 				<DependentOn>TEnity.h</DependentOn>
 				<BuildOrder>6</BuildOrder>
 			</CppCompile>
+			<CppCompile Include="TEnitymap.cpp">
+				<DependentOn>TEnitymap.h</DependentOn>
+				<BuildOrder>7</BuildOrder>
+			</CppCompile>
 			<FormResources Include="Main.dfm"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
