@@ -37,7 +37,8 @@ void TEnitymap::calcEnity(TEnity* enity) {
 		if(*(listEnity[i]->road) == *(enity->road)
 		&& listEnity[i]->direction == enity->direction) {
 			//double koeff = (range - 10.0)/(STOP_RANGE) - 1;
-			enity->acceleration += range
+			enity->speed += enity->acceleration;
+			enity->position += enity->speed;
 		}
 	}
 }
